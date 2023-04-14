@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> estudo de caso formulário de contato</title>
+    <style>
+        body{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Fale conosco</h1>
+    <hr>
+
+    <form action="contato.php" method="post">
+        <p><b>NOME:</b></p>
+        <input type="text" name="nome" placeholder="Digite o seu nome">
+
+        <p><b>ASSUNTO:</b></p>
+        <input type="text" name=" assunto" placeholder="Digite o assunto">
+
+        <p><b>MOTIVO DO CONTATO:</b></p>
+        <select name="motivo_do_contato">
+          <option value="informacoes">informações</option>
+          <option value="sugestoes">sugestões</option>
+          <option value="reclamacoes">reclamações</option>
+        </select>
+  
+        <br>
+        <p><b>MENSAGEM:</b></p>
+  
+        <textarea cols="50" rows="10" placeholder="Digite uma mensagem"></textarea>
+        <br>
+        <input type="submit" name="enviar"> <!--cria o botão enviar-->
+
+        <hr>
+  
+  </form>
+    
+</body>
+</html>
