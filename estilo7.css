@@ -1,0 +1,56 @@
+/*Aqui aplicamos as configurações de fonte e cores ao corpo da página*/
+body{
+  font-family: Helvetica, Arial;
+  color:#333;
+  text-transform: capitalize;
+}
+
+/*configuramos o título*/
+h1{
+  background:  #198754;
+  padding: 20px;
+  color: white;
+}
+
+/*Aplicamos uma mesma regra para três diferentes tags: input, select e textarea*/
+input, select, textarea{
+  padding: 15px;
+  width: calc(100% - 30px);
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+
+select{
+  width: 100%;
+}
+
+/*Aqui declaramos o contâiner*/
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+/*E a seguir aplicamos um seletor avançado*/
+input[type="submit"]{
+  width: 100%;
+  margin-top: 20px;
+  background: #198754;
+  border: 1px solid green;
+  color:white;
+  font-size: 2em;
+}
+
+/* inserimos uma regra de comportamento desse botão quando for sobreposto pelo cursor do mouse*/
+input[type="submit"]:hover{
+  background: orange;
+  border: 1px solid orange;
+}
+
+/*aplicamos uma regra para os parágrafos e para as tags <b> filhas de <p>*/
+p{
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+p > b{
+  color: grey;
+}

@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo7.css">
+  
 
-    <title> estudo de caso formulário de contato</title>
-    <style>
-        body{
-            color: red;
-        }
-    </style>
+    <title>formulário de contato</title>
+    
 </head>
 
 <body>
     <h1>Fale conosco</h1>
     <hr>
 
-    <form action="contato.php" method="post">
+    <form action="contato.php" 
+          method="post"
+          name="formulario_contato"
+          class="container"
+    >
+
         <p><b>NOME:</b></p>
         <input type="text" name="nome" placeholder="Digite o seu nome">
 
@@ -25,21 +28,21 @@
 
         <p><b>MOTIVO DO CONTATO:</b></p>
         <select name="motivo_do_contato">
-          <option value="informacoes">informações</option>
-          <option value="sugestoes">sugestões</option>
-          <option value="reclamacoes">reclamações</option>
+          <option value="informacoes">Informações</option>
+          <option value="sugestoes">Sugestões</option>
+          <option value="reclamacoes">Reclamações</option>
         </select>
   
         <br>
         <p><b>MENSAGEM:</b></p>
   
-        <textarea cols="50" rows="10" placeholder="Digite uma mensagem"></textarea>
+        <textarea name="mensagem" cols="50" rows="10" placeholder="Digite uma mensagem"></textarea>
         <br>
-        <input type="submit" name="enviar"> <!--cria o botão enviar-->
+        <input type="submit" name="enviar" value="Enviar"> <!--cria o botão enviar-->
 
         <hr>
-  
+      
   </form>
-    
+
 </body>
 </html>
